@@ -1,0 +1,87 @@
+
+.content.data-v-3df0de86 {
+  padding: 40rpx;
+}
+.base.data-v-3df0de86 {
+  width: 670rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #cbd1dc;
+  border-top: 0;
+  box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+}
+.avatar.data-v-3df0de86,.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86{
+  font-size: 28rpx;
+  height: 150rpx;
+  display: flex;
+  border-radius: 10rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #7c8083;
+}
+.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86 {
+  height: 100rpx;
+}
+.avatar .avatar-img.data-v-3df0de86 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.erweima-img.data-v-3df0de86 {
+  width: 50rpx;
+  height: 50rpx;
+}
+.avatar ._p.data-v-3df0de86,.name ._p.data-v-3df0de86,.address ._p.data-v-3df0de86,.sex ._p.data-v-3df0de86,.erweima ._p.data-v-3df0de86 {
+  margin-left: 40rpx;
+}
+.avatar .img-box.data-v-3df0de86,.name .name-box.data-v-3df0de86,.address .address-box.data-v-3df0de86,.sex .sex-box.data-v-3df0de86,.erweima .erweima-box.data-v-3df0de86 {
+  margin-right: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.img-box .right.data-v-3df0de86,.name-box .right.data-v-3df0de86,.address-box .right.data-v-3df0de86,.sex-box .right.data-v-3df0de86,.erweima .right.data-v-3df0de86,.jurisdiction .right.data-v-3df0de86,.setting .right.data-v-3df0de86{
+  width: 30rpx;
+  margin-left: 10rpx;
+  height: 30rpx;
+}
+.autograph-head .head-right .right.data-v-3df0de86 {
+  width: 30rpx;
+  height: 30rpx;
+}
+.autograph.data-v-3df0de86,.jurisdiction.data-v-3df0de86,.setting.data-v-3df0de86 {
+  padding: 40rpx;
+  margin-top: 60rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+}
+.setting.data-v-3df0de86 {
+  margin-top: 0;
+}
+.autograph .autograph-head.data-v-3df0de86 {
+  display: flex;
+  justify-content: space-between;
+}
+.autograph .autograph-head .head-left.data-v-3df0de86 {
+  display: flex;
+}
+.autograph .autograph-head image.data-v-3df0de86 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.autograph .autograph-text.data-v-3df0de86 {
+  margin-top: 10rpx;
+}
+.jurisdiction.data-v-3df0de86,.setting.data-v-3df0de86 {
+  display: flex;
+  justify-content: space-between;
+}
+.save.data-v-3df0de86 {
+  width: 400rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  background-color: #72e4da;
+}
+

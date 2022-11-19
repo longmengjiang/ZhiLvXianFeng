@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/community/community",
+    "pages/my/my",
+    "pages/timeDown/timeDown",
+    "pages/personal/personal",
+    "pages/modifyName/modifyName",
+    "pages/address/address",
+    "pages/sex/sex",
+    "pages/erweima/erweima",
+    "pages/autograph/autograph",
+    "pages/choice/choice",
+    "pages/homepage/homepage",
+    "pages/schedule/schedule",
+    "pages/add/add",
+    "pages/register/register",
+    "pages/AddDynamics/AddDynamics"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#eaf1fe",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home2.png",
+        "selectedIconPath": "static/home2-active.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/community/community",
+        "iconPath": "static/community-fill.png",
+        "selectedIconPath": "static/community-fill-active.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/schedule/schedule",
+        "iconPath": "static/schedule.png",
+        "selectedIconPath": "static/schedule-active.png"
+      },
+      {
+        "text": "",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/my(2).png",
+        "selectedIconPath": "static/my(2)-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

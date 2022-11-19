@@ -1,0 +1,30 @@
+
+.erweima-box.data-v-ca7be768 {
+  padding: 40rpx;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  width: 500rpx;
+  background-color: #fff;
+  height: 580rpx;
+  box-shadow:0 0 10rpx 5rpx rgba(0,0,0,0.1);
+}
+.head.data-v-ca7be768 {
+  display: flex;
+}
+.head .avatar.data-v-ca7be768 {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.info.data-v-ca7be768 {
+  margin-left: 20rpx;
+}
+.info .address.data-v-ca7be768 {
+  font-size: 26rpx;
+}
+.erweima-box .erweima.data-v-ca7be768 {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 50rpx;
+}
+

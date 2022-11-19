@@ -1,0 +1,98 @@
+
+.container.data-v-891c2434 {
+  height: 100vh;
+  background-color: #ffffff;
+}
+.head.data-v-891c2434 {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  z-index: 22;
+  background-image: linear-gradient(to bottom, #71e6d3, #7cb7f8);
+}
+.head .avatar.data-v-891c2434{
+  position: absolute;
+  width: 130rpx;
+  height: 130rpx;
+  left: 50%;
+  margin-top: 50rpx;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0 10rpx 10rpx 0 #3d8cc2;
+}
+.head .lang.data-v-891c2434 {
+  position: absolute;
+  width: 100%;
+  height: 180rpx;
+  bottom: 0;
+}
+.body.data-v-891c2434 {
+  width: 100%;
+  height: 800rpx;
+  background-color: #ffffff;
+}
+.login-box.data-v-891c2434 {
+  padding: 40rpx 80rpx;
+}
+.login-box image.data-v-891c2434 {
+  width: 50rpx;
+  height: 50rpx;
+}
+.phone.data-v-891c2434,.lock.data-v-891c2434,.code.data-v-891c2434,.email.data-v-891c2434,.security.data-v-891c2434,.name.data-v-891c2434 {
+  display: flex;
+  font-size: 22rpx;
+  margin-bottom: 40rpx;
+}
+.phone image.data-v-891c2434,.code image.data-v-891c2434,.email image.data-v-891c2434,.security image.data-v-891c2434,.name image.data-v-891c2434,.lock image.data-v-891c2434 {
+  margin-right: 20rpx;
+}
+.code .yanzhengma.data-v-891c2434 {
+  margin-left: 20rpx;
+  margin-top: -40rpx;
+}
+.login-btn.data-v-891c2434 {
+  margin: 0 auto;
+  width: 400rpx;
+  height: 100rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 28rpx;
+  margin-top: 100rpx;
+  letter-spacing: 6rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  background-image: linear-gradient(to bottom, #71e6d3, #7cb7f8);
+}
+.bot.data-v-891c2434 {
+  width: 250rpx;
+  display: flex;
+  margin: 30rpx auto;
+  justify-content: space-between;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #477bff;
+}
+.warn.data-v-891c2434 {
+  font-size: 22rpx;
+  margin-left: 40rpx;
+  line-height: 40rpx;
+  margin-top: -30rpx;
+  color: crimson;
+}
+.lock .warn.data-v-891c2434 {
+  line-height: 70rpx;
+}
+.get-box.data-v-891c2434 {
+  width: 150rpx;
+  height: 50rpx;
+  margin-left: 100rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: #71e6d3;
+}
+.count.data-v-891c2434 {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+

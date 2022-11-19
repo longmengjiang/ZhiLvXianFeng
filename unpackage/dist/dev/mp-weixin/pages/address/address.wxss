@@ -1,0 +1,21 @@
+
+.content.data-v-db675620 {
+  padding: 40rpx;
+}
+.line.data-v-db675620 {
+  width: 670rpx;
+  height: 2rpx;
+  margin-top: 5rpx;
+  background-color: #7c8083;
+}
+.done.data-v-db675620 {
+  width: 200rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  background-color: #72e4da;
+}
+

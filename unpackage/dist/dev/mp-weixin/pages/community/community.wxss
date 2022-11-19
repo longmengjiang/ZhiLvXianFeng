@@ -1,0 +1,177 @@
+
+.content {
+  padding: 40rpx;
+}
+.content .motto {
+  position: relative;
+}
+.content .motto image {
+  width: 670rpx;
+  border-radius: 20rpx;
+  height: 270rpx;
+}
+.content .motto .motto-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  color: #6f7272;
+  text-align: left;
+  line-height: 50rpx;
+  width: 550rpx;
+  height: 60rpx;
+  padding: 60rpx 60rpx 0 60rpx;
+}
+.content .motto .signature {
+  position: absolute;
+  right: 60rpx;
+  bottom: 60rpx;
+  color: #6f7272;
+}
+.content .active {
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 40rpx 40rpx 40rpx 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.content .active .chance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .active .chance image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.content .active .my-active .active-head {
+  display: flex;
+  width: 220rpx;
+  justify-content: space-between;
+}
+.content .active .my-active .active-head ._p {
+  width: 125rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.content .active .my-active .active-head ._p ._span {
+  font-size: 22rpx;
+}
+.content .active .my-active .active-head image {
+  width: 60rpx;
+  height: 80rpx;
+}
+.content .active .my-active .active-bot {
+  color: #fbbc4d;
+  margin-top: 40rpx;
+  display: flex;
+}
+.content .active .my-active .active-bot image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+.dynamic {
+  width: 630rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  padding: 20rpx;
+}
+.dynamic-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+.dynamic-head .item-box {
+  display: flex;
+  justify-content: space-between;
+}
+.dynamic-head .head-item {
+  margin-right: 50rpx;
+  line-height: 50rpx;
+  vertical-align: top;
+  font-size: 26rpx;
+  color: #575b5b;
+}
+.dynamic-head .add {
+  font-size: 60rpx;
+  line-height: 50rpx;
+}
+.move {
+  font-size: 34rpx !important;
+  color: #000000 !important;
+  font-weight: 600;
+  border-bottom: 4rpx solid #72e6da;
+}
+.dynamic-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dynamic-items .item {
+  width: 630rpx;
+  margin-bottom: 40rpx;
+}
+.item .item-head {
+  justify-content: space-between;
+  display: flex;
+}
+.item-head .item-element {
+  width: 540rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.item-head .item-element .item-name {
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+.item-head .item-element .concern {
+  font-size: 28rpx;
+  width: 100rpx;
+  height: 40rpx;
+  background-color: #72e6da;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #6f7272;
+  font-weight: 600;
+  margin-top: 20rpx;
+}
+.item .item-text {
+  font-size: 28rpx;
+  color: #6f7272;
+  font-weight: 600;
+  margin: 10rpx 0;
+}
+.item .item-head image {
+  width: 65rpx;
+  height: 65rpx;
+  border-radius: 50%;
+  border: 1rpx solid #72e6da;
+}
+.item .img-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.item .img-box image {
+  width: 200rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+}
+.item .img-number {
+  width: 60rpx;
+  height: 40rpx;
+  position: absolute;
+  z-index: 55;
+  right: 0;
+  text-align: center;
+  line-height: 40rpx;
+  bottom: 0;
+  border-radius: 10rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+

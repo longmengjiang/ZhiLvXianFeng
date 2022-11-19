@@ -1,0 +1,196 @@
+
+page {
+    background: #eaf1fe;
+}
+.clock {
+  position: relative;
+  margin-top: 200rpx;
+  left: 50%;
+  -webkit-transform: translateX(-200rpx);
+          transform: translateX(-200rpx);
+  width: 400rpx;
+  height: 300rpx;
+}
+.clock .dot-box {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 400rpx;
+  height: 15rpx;
+}
+.clock .dot-box .dot {
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  background-color: #29b996;
+}
+.clock .dot-box:nth-child(1) {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.clock .dot-box:nth-child(2) {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.clock .dot-box:nth-child(3) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.clock .dot-box:nth-child(4) {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.clock .dot-box:nth-child(5) {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+.one-insert {
+  position: absolute;
+  left: 50%;
+  top: -90rpx;
+  -webkit-transform: translateX(-90rpx);
+          transform: translateX(-90rpx);
+  width: 180rpx;
+  height: 180rpx;
+  box-shadow: inset 10rpx 20rpx 20rpx #dddddd;
+  border-radius: 50%;
+  background-color: #fefefe;
+  z-index: 2;
+}
+.two-insert {
+  position: absolute;
+  left: 50%;
+  top: -125rpx;
+  -webkit-transform: translateX(-125rpx);
+          transform: translateX(-125rpx);
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+.center-point {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  background-color: #194db7;
+  z-index: 3;
+  -webkit-transform: translate(-50%,-30%);
+          transform: translate(-50%,-30%);
+}
+.hour,.min,.sec {
+  position: absolute;
+  left: 200rpx;
+  top: -10rpx;
+  z-index: 2;
+  border-radius: 20rpx;
+  width: 85rpx;
+  height: 28rpx;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: #29B996;
+}
+.min {
+  width: 125rpx;
+}
+.sec {
+  width: 170rpx;
+}
+.count-down {
+  display: flex;
+  width: 580rpx;
+  height: 80rpx;
+  padding: 30rpx 40rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  background-color: #FFFFFF;
+}
+.count-down .begin {
+  width: 150rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #FFFFFF;
+  border-radius: 20rpx;
+  background-color: #4fdcb9;
+  margin-left: 60rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.task {
+  width: 670rpx;
+  margin-top: 40rpx;
+  background-color: #FFFFFF;
+  padding: 40rpx;
+}
+.task-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+.task-head .item-box {
+  display: flex;
+  justify-content: space-between;
+}
+.task-head .head-item {
+  margin-right: 50rpx;
+  line-height: 50rpx;
+  vertical-align: top;
+  font-size: 26rpx;
+  color: #575b5b;
+}
+.task-head .more {
+  font-size: 60rpx;
+  line-height: 50rpx;
+}
+.move {
+  font-size: 34rpx !important;
+  color: #000000 !important;
+  font-weight: 600;
+  border-bottom: 4rpx solid #72e6da;
+}
+.todo .todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 40rpx;
+  border-radius: 15rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  width: 590rpx;
+  margin-bottom: 30rpx;
+  height: 60rpx;
+  background-color: #72e6da;
+}
+.todo .todo-item .todo-title {
+  width: 350rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.todo .todo-item .goto {
+  width: 150rpx;
+  margin-right: 10rpx;
+  background-color: #ceffff;
+  text-align: center;
+  line-height: 60rpx;
+  border: 2rpx solid #FFFFFF;
+  border-radius: 50rpx;
+  height: 60rpx;
+}
+.todo .todo-item .detele {
+  width: 100rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 50rpx;
+  height: 60rpx;
+  background-color: #ceffff;
+}
+

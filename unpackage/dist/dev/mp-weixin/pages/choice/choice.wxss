@@ -1,0 +1,117 @@
+
+.content.data-v-136896a6 {
+    padding: 40rpx;
+}
+.progress-box.data-v-136896a6 {
+    border-radius: 20rpx;
+    width: 590rpx;
+    padding: 40rpx;
+    box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+    background-color: #ffffff;
+}
+.progress-box .progress.data-v-136896a6 {
+  display: flex;
+  flex-direction: column;
+}
+.progress-box .progress .progress-head.data-v-136896a6 {
+  margin-bottom: 30rpx;
+  color: #454949;
+}
+.progress-box .progress .progress-head .time.data-v-136896a6 {
+  display: flex;
+  margin-left: 10rpx;
+  color: #72e4da;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.kinds-box.data-v-136896a6 {
+    display: flex;
+    border-radius: 20rpx;
+    flex-direction: column;
+    margin-top: 40rpx;
+    padding: 40rpx;
+    background-color: #ffffff;
+    box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+}
+.kinds-items.data-v-136896a6 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40rpx;
+    justify-content: space-between;
+}
+.kinds-items .items.data-v-136896a6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+}
+.kinds-items .items image.data-v-136896a6 {
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 10rpx;
+}
+.task.data-v-136896a6 {
+    margin-top: 40rpx;
+    padding: 40rpx;
+    border-radius: 20rpx;
+    background-color: #ffffff;
+    box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+}
+.task .task-head.data-v-136896a6 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.task .task-head image.data-v-136896a6 {
+    width: 30rpx;
+    margin-left: 10rpx;
+    height: 30rpx;
+}
+.task input.data-v-136896a6 {
+    border-bottom: 2rpx solid #777777;
+}
+.btn-box.data-v-136896a6 {
+    width: 400rpx;
+    margin: 0 auto;
+    margin-top: 80rpx;
+    display: flex;
+    justify-content: space-between;
+    height: 80rpx;
+}
+.btn-box .save.data-v-136896a6,
+  .btn-box .begin.data-v-136896a6 {
+    box-shadow: 0 5rpx 10rpx 0 #cbd1dc;
+    width: 135rpx;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    border-radius: 20rpx;
+    background-color: #72e4da;
+}
+.kindname.data-v-136896a6 {
+    color: #72e4da;
+    font-weight: 700;
+    font-size: 34rpx;
+}
+.page.data-v-136896a6 {
+    margin-top: -100rpx;
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+}
+.zoom.data-v-136896a6 {
+    width: 50vw;
+    height: 18px;
+    margin-left: 95rpx;
+    background-color: #007AFF;
+    border-radius: 64rpx;
+}
+.ball.data-v-136896a6 {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    border-radius: 100%;
+    background-color: #00FFFF;
+}
+

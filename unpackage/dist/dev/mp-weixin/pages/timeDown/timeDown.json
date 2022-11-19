@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "倒计时",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#000000",
+  "enablePullDownRefresh": false,
+  "usingComponents": {}
+}

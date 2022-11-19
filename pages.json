@@ -1,0 +1,162 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }, {
+      "path": "pages/community/community",
+      "style": {
+        "navigationBarTitleText": "社区",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#4fdcb9",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#72e7d8",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/timeDown/timeDown",
+      "style": {
+        "navigationBarTitleText": "倒计时",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#000000",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/personal/personal",
+      "style": {
+        "navigationBarTitleText": "个人信息",
+        "enablePullDownRefresh": false
+      }
+
+    }
+
+    , {
+      "path": "pages/modifyName/modifyName",
+      "style": {
+        "navigationBarTitleText": "更改昵称",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/address/address",
+      "style": {
+        "navigationBarTitleText": "更改地区",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/sex/sex",
+      "style": {
+        "navigationBarTitleText": "更改性别",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/erweima/erweima",
+      "style": {
+        "navigationBarTitleText": "我的二维码",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/autograph/autograph",
+      "style": {
+        "navigationBarTitleText": "个性签名",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/choice/choice",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/homepage/homepage",
+      "style": {
+        "navigationBarTitleText": "主页",
+        "enablePullDownRefresh": false
+      }
+
+    },
+    {
+      "path": "pages/schedule/schedule",
+      "style": {
+        "navigationBarTitleText": "我的日程",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/add/add",
+      "style": {
+        "navigationBarTitleText": "添加日程",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/register/register",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+
+    }
+      ,{
+            "path" : "pages/AddDynamics/AddDynamics",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor": "#4fdcb9",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#eaf1fe",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [{
+      "text": "",
+      "pagePath": "pages/index/index",
+      "iconPath": "static/home2.png",
+      "selectedIconPath": "static/home2-active.png"
+    }, {
+      "text": "",
+      "pagePath": "pages/community/community",
+      "iconPath": "static/community-fill.png",
+      "selectedIconPath": "static/community-fill-active.png"
+    }, {
+      "text": "",
+      "pagePath": "pages/schedule/schedule",
+      "iconPath": "static/schedule.png",
+      "selectedIconPath": "static/schedule-active.png"
+    }, {
+      "text": "",
+      "pagePath": "pages/my/my",
+      "iconPath": "static/my(2).png",
+      "selectedIconPath": "static/my(2)-active.png"
+    }]
+  }
+}

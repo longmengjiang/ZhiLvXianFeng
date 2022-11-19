@@ -1,0 +1,163 @@
+
+.head.data-v-5fc20246 {
+  position: relative;
+}
+.head image.data-v-5fc20246 {
+  width: 100%;
+  height: 350rpx;
+}
+.head .change.data-v-5fc20246 {
+  position: absolute;
+  right: 40rpx;
+  bottom: 20rpx;
+  width: 200rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  z-index: 99;
+  background-color: rgb(255,255,255,0.7);
+}
+.head .share.data-v-5fc20246 {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  right: 40rpx;
+  top: 20rpx;
+}
+.con.data-v-5fc20246 {
+  padding: 40rpx;
+  z-index: 22;
+}
+.con .info.data-v-5fc20246 {
+  display: flex;
+  margin-top: -80rpx;
+  justify-content: space-between;
+  width: 670rpx;
+  height: 130rpx;
+}
+.info .info-left .avatar.data-v-5fc20246 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 99;
+  border: 6rpx solid #ffffff;
+}
+.info-left.data-v-5fc20246 {
+  display: flex;
+}
+.info-left .name.data-v-5fc20246 {
+  margin-top: 70rpx;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.info-right.data-v-5fc20246 {
+  display: flex;
+  margin-top: 40rpx;
+  justify-content: space-between;
+  width: 350rpx;
+  font-size: 24rpx;
+}
+.info .info-right .line.data-v-5fc20246 {
+  margin-top: 25rpx;
+}
+.info .info-right .erweima.data-v-5fc20246 {
+  margin-top: 20rpx;
+}
+.info-right .erweima image.data-v-5fc20246 {
+  width: 50rpx;
+  border: 2rpx solid #4fdcb9;
+  border-radius: 10rpx;
+  height: 50rpx;
+}
+.info-right .follow.data-v-5fc20246,.info-right .friends.data-v-5fc20246,.info-right .fabulous.data-v-5fc20246 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.level image.data-v-5fc20246 {
+  width: 80rpx;
+  height: 40rpx;
+}
+.person-info.data-v-5fc20246 {
+  display: flex;
+  justify-content: space-between;
+}
+.person-info .person-info-left.data-v-5fc20246 {
+  display: flex;
+  margin-left: 10rpx;
+  justify-content: space-between;
+  width: 460rpx;
+  font-size: 26rpx;
+}
+.person-info .person-info-right.data-v-5fc20246 {
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+.join.data-v-5fc20246 {
+  margin-left: 10rpx;
+  margin-top: 40rpx;
+  font-size: 26rpx;
+}
+.panel.data-v-5fc20246 {
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40rpx;
+  width: 670rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+}
+.panel .totaltime.data-v-5fc20246,.panel .totalday.data-v-5fc20246 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.panel .totaltime ._span.data-v-5fc20246,.panel .totalday ._span.data-v-5fc20246 {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #4fdcb9;
+}
+.panel ._p.data-v-5fc20246 {
+  margin-top: 10rpx;
+}
+.bot-con.data-v-5fc20246 {
+  width: 100%;
+  border-radius: 20rpx;
+  height: 700rpx;
+  background-color: #ffffff;
+}
+.bot-head.data-v-5fc20246 {
+  display: flex;
+  justify-content: space-around;
+}
+.bot-head image.data-v-5fc20246 {
+  width: 50rpx;
+  margin-right: 10rpx;
+  height: 50rpx;
+}
+.bot-head-left.data-v-5fc20246,.bot-head-right.data-v-5fc20246 {
+  margin-top: 40rpx;
+  display: flex;
+  line-height: 50rpx;
+  font-size: 28rpx;
+}
+.bot-body.data-v-5fc20246 {
+  margin-top: 80rpx;
+}
+.bot-body image.data-v-5fc20246 {
+  width: 100%;
+  height: 300rpx;
+}
+.bot-body ._p.data-v-5fc20246 {
+  text-align: center;
+  font-size: 26rpx;
+}
+

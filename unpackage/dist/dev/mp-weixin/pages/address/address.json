@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "更改地区",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "picker-address": "/components/pickerAddress/pickerAddress"
+  }
+}

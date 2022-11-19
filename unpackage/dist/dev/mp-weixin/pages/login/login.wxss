@@ -1,0 +1,97 @@
+
+.container.data-v-b237504c {
+  height: 100vh;
+  background-color: #ffffff;
+}
+.head.data-v-b237504c {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  z-index: 22;
+  background-image: linear-gradient(to bottom, #71e6d3, #7cb7f8);
+}
+.head .avatar.data-v-b237504c{
+  position: absolute;
+  width: 130rpx;
+  height: 130rpx;
+  left: 50%;
+  margin-top: 50rpx;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0 10rpx 10rpx 0 #3d8cc2;
+}
+.head .lang.data-v-b237504c {
+  position: absolute;
+  width: 100%;
+  height: 180rpx;
+  bottom: 0;
+}
+.body.data-v-b237504c {
+  width: 100%;
+  background-color: #ffffff;
+}
+.login-box.data-v-b237504c {
+  padding: 40rpx 80rpx;
+}
+.login-box image.data-v-b237504c {
+  width: 50rpx;
+  height: 50rpx;
+}
+.phone.data-v-b237504c,.lock.data-v-b237504c,.code.data-v-b237504c,.name.data-v-b237504c {
+  display: flex;
+  font-size: 22rpx;
+  margin-bottom: 40rpx;
+}
+.lock input.data-v-b237504c {
+  width: 350rpx;
+}
+.phone image.data-v-b237504c,.code image.data-v-b237504c,.name image.data-v-b237504c,.lock image.data-v-b237504c {
+  margin-right: 20rpx;
+}
+.code .yanzhengma.data-v-b237504c {
+  margin-left: 20rpx;
+  margin-top: 0rpx;
+}
+.login-btn.data-v-b237504c {
+  margin: 0 auto;
+  width: 400rpx;
+  height: 100rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 34rpx;
+  margin-top: 120rpx;
+  letter-spacing: 6rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  background-image: linear-gradient(to bottom, #71e6d3, #7cb7f8);
+}
+.bot.data-v-b237504c {
+  width: 250rpx;
+  display: flex;
+  margin: 50rpx auto;
+  justify-content: space-between;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #477bff;
+}
+.warn.data-v-b237504c {
+  font-size: 22rpx;
+  margin-left: 40rpx;
+  margin-top: -30rpx;
+  line-height: 40rpx;
+  color: crimson;
+}
+.tip.data-v-b237504c {
+  color: #55aaff;
+  font-weight: 600;
+}
+.lock .eye.data-v-b237504c {
+  width: 50rpx;
+  height: 50rpx;
+}
+.eye-box.data-v-b237504c {
+  width: 50rpx;
+  height: 50rpx;
+}
+
