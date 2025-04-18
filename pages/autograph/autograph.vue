@@ -1,8 +1,8 @@
 <template>
   <view class="content">
     <view class="name">
-      <input class="uni-input" focus placeholder="请输入个性签名" v-model="name"/>
-      <view class="done" @click="changeautograph">
+      <input class="uni-input" focus placeholder="请输入个性签名" v-model="autograph"/>
+      <view class="done" @click="modifyautograph(autograph)">
         完成
       </view>
     </view>
@@ -11,17 +11,33 @@
 
 <script>
   export default {
+    // 基础数据
     data() {
       return {
-        
+        autograph:''
       }
     },
     methods: {
-      changeautograph() {
-        uni.navigateTo({
-          url:'/pages/personal/personal'
+      // 修改个性签名
+      async modifyautograph(autograph) {
+        await this.request({
+          url:'8002/ucenterservice/ucenter/updateMemberInfo',
+          method:'POST',
+          data:{
+            "id":uni.getStorageSync('userid'),
+            "sign":autograph
+          }
+        }).then(res=> {
+          if(res.code === 200) {
+            uni.setStorageSync('sign',autograph)
+            uni.navigateTo({
+              url:'/pages/personal/personal'
+            })
+          }
+        }).catch(err=> {
+          console.log('错误：',err)
         })
-      }
+      },
     }
   }
 </script>
@@ -45,6 +61,6 @@
   height: 60rpx;
   margin: 0 auto;
   margin-top: 100rpx;
-  background-color: #72e4da;
+  background-color: #8397e2;
 }
 </style>

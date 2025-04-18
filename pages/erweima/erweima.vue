@@ -2,26 +2,72 @@
   <view class="content">
     <view class="erweima-box">
       <view class="head">
-        <image src="../../static/10.jpg" mode="" class="avatar"></image>
+        <image :src="avatar" mode="" class="avatar"></image>
         <view class="info">
-          <p class="name">~蓝桉</p>
+          <p class="name">{{name}}</p>
           <p class="address">广东湛江</p>
         </view>
       </view>
-      <image src="../../static/QR-Code.png" mode="" class="erweima"></image>
+      <image :src="erweima" mode="" class="erweima"></image>
     </view>
   </view> 
 </template>
 
 <script>
   export default {
+    // 基础数据
     data() {
       return {
-        
+        name :'',
+        erweima:'',
+        avatar:''
       }
     },
+    onLoad() {
+      // 获取本地存储信息
+      this.avatar = uni.getStorageSync('avatar')
+      this.name = uni.getStorageSync('nickname')
+    },
+    mounted() {
+      // 获取二维码信息
+      this.geterweima()
+    },
     methods: {
-      
+      // 获取二维码信息
+      async geterweima() {
+        await this.request({
+        url:`8003/qr/code/getQRByHutool/${uni.getStorageSync('userid')}`,
+        method:'GET',
+        }).then(res=> {
+          if(res.code === 200) {
+            // 更新页面的渲染
+            this.erweima = res.data.url
+            this.modifyerweima(res.data.url)
+            console.log("------------",res)
+            // 更新缓存中的图片链接
+            uni.setStorageSync('qrcode',res.data.url)
+          }
+        }).catch(err => {
+          console.log(err)
+        })
+      },
+      // 更改二维码
+      async modifyerweima(imgurl) {
+        await this.request({
+          url:'8002/ucenterservice/ucenter/updateMemberInfo',
+          method:'POST',
+          data:{
+            "id":uni.getStorageSync('userid'),
+            "qrcode":imgurl
+          }
+        }).then(res=> {
+          if(res.code === 200) {
+            console.log(res.data)
+          }
+        }).catch(err=> {
+          console.log('错误：',err)
+        })
+      }
     }
   }
 </script>

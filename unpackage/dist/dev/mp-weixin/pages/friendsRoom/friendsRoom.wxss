@@ -1,0 +1,97 @@
+
+.content .bg-img.data-v-3a52b4b0 {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.content.data-v-3a52b4b0 {
+    padding: 40rpx;
+}
+.main.data-v-3a52b4b0 {
+    position: relative;
+    height: 300rpx;
+    border-radius: 20rpx;
+    z-index: 3;
+    margin-bottom: 150rpx;
+    padding: 20rpx;
+    background: rgba(255, 255, 255, 0.9);
+}
+.bot1.data-v-3a52b4b0 {
+    position: absolute;
+    width: 600rpx;
+    left: 35rpx;
+    height: 30rpx;
+    bottom: -30rpx;
+    z-index: 2;
+    border-radius: 0 0 20rpx 20rpx;
+    background: rgba(255, 255, 255, 0.6);
+}
+.bot2.data-v-3a52b4b0 {
+    position: absolute;
+    width: 480rpx;
+    height: 50rpx;
+    bottom: -55rpx;
+    left: 90rpx;
+    border-radius: 0 0 20rpx 20rpx;
+    background: rgba(255, 255, 255, 0.5);
+}
+.title.data-v-3a52b4b0 {
+    font-size: 28rpx;
+    text-align: center;
+    padding: 0 0 20rpx 0;
+    border-bottom: 2rpx solid #cedbf5;
+}
+.main image.data-v-3a52b4b0 {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+.people1.data-v-3a52b4b0 {
+    position: absolute;
+    left: 40rpx;
+    top: 110rpx;
+}
+.people2.data-v-3a52b4b0 {
+    position: absolute;
+    left: 160rpx;
+    top: 190rpx;
+}
+.people5.data-v-3a52b4b0 {
+    position: absolute;
+    right: 40rpx;
+    top: 110rpx;
+}
+.people4.data-v-3a52b4b0 {
+    position: absolute;
+    right: 160rpx;
+    top: 190rpx;
+}
+.people3.data-v-3a52b4b0 {
+    position: absolute;
+    top: 230rpx;
+    left: 300rpx;
+}
+.now.data-v-3a52b4b0 {
+    position: absolute;
+    left: 290rpx;
+    top: 120rpx;
+    color: #4f2f7f;
+    font-size: 36rpx;
+}
+.addfriends.data-v-3a52b4b0,.addtask.data-v-3a52b4b0,.addtodaytask.data-v-3a52b4b0 {
+    width: 250rpx;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    font-size: 26rpx;
+    margin: 50rpx auto;
+    border-radius: 10rpx;
+    box-shadow: 0 2rpx 0 0 #9a9aa0;
+    background-color: #f3f0f8;
+}
+

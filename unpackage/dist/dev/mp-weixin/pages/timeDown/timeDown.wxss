@@ -1,28 +1,39 @@
 
 .content.data-v-d5d6b134 {
+  overflow: hidden;
   min-height: 100vh;
   background-color: #000;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
+}
+.title.data-v-d5d6b134 {
+  color: #ae97cb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transform: translateY(-100rpx);
+          transform: translateY(-100rpx);
+  margin: 0 auto;
+}
+.title ._p.data-v-d5d6b134 {
+  margin-bottom: 10rpx;
 }
 .count.data-v-d5d6b134 {
   display: flex;
   position: relative;
   justify-content: center;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
 .count .time.data-v-d5d6b134 {
-  color: #72e5d9;
+  color: #ae97cb;
   z-index: 99;
   font-size: 100rpx;
 }
 .count .btn-box.data-v-d5d6b134 {
-  margin-top: 150rpx;
+  margin-top: 100rpx;
 }
 .count .btn-box .stop.data-v-d5d6b134,
 .begin.data-v-d5d6b134,
@@ -36,7 +47,7 @@
   line-height: 80rpx;
   text-align: center;
   border-radius: 10rpx;
-  border: 4rpx solid #72e5d9;
+  border: 4rpx solid #ae97cb;
 }
 .star1.data-v-d5d6b134,
 .star2.data-v-d5d6b134,
@@ -47,7 +58,7 @@
 .star7.data-v-d5d6b134,
 .star8.data-v-d5d6b134 {
   position: absolute;
-  top: -800rpx;
+  top: -900rpx;
   left: 0;
   width: 300rpx;
   height: 300rpx;
@@ -61,20 +72,20 @@
           animation-iteration-count: infinite;
 }
 .star2.data-v-d5d6b134 {
-  width: 250rpx;
-  height: 250rpx;
+  width: 300rpx;
+  height: 300rpx;
   left: 50rpx;
-  top: -800rpx;
+  top: -900rpx;
   -webkit-animation-name: star2-data-v-d5d6b134;
           animation-name: star2-data-v-d5d6b134;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 .star3.data-v-d5d6b134 {
-  width: 250rpx;
-  height: 250rpx;
+  width: 270rpx;
+  height: 270rpx;
   left: 200rpx;
-  top: -800rpx;
+  top: -900rpx;
   -webkit-animation-name: star3-data-v-d5d6b134;
           animation-name: star3-data-v-d5d6b134;
   -webkit-animation-delay: 5s;
@@ -83,18 +94,18 @@
 .star4.data-v-d5d6b134 {
   width: 300rpx;
   height: 300rpx;
-  left: 250rpx;
-  top: -800rpx;
+  left: 500rpx;
+  top: -900rpx;
   -webkit-animation-name: star4-data-v-d5d6b134;
           animation-name: star4-data-v-d5d6b134;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
 }
 .star5.data-v-d5d6b134 {
-  width: 250rpx;
-  height: 250rpx;
-  left: 350rpx;
-  top: -800rpx;
+  width: 270rpx;
+  height: 270rpx;
+  left: 550rpx;
+  top: -900rpx;
   -webkit-animation-name: star5-data-v-d5d6b134;
           animation-name: star5-data-v-d5d6b134;
   -webkit-animation-delay: 2s;
@@ -105,7 +116,7 @@
 .star6.data-v-d5d6b134 {
   width: 300rpx;
   height: 300rpx;
-  left: 500rpx;
+  left: 600rpx;
   top: -400rpx;
   -webkit-animation-name: star6-data-v-d5d6b134;
           animation-name: star6-data-v-d5d6b134;
@@ -113,9 +124,9 @@
           animation-duration: 2.5s;
 }
 .star7.data-v-d5d6b134 {
-  width: 250rpx;
-  height: 250rpx;
-  left: 500rpx;
+  width: 270rpx;
+  height: 270rpx;
+  left: 700rpx;
   top: 0rpx;
   -webkit-animation-name: star7-data-v-d5d6b134;
           animation-name: star7-data-v-d5d6b134;
@@ -125,7 +136,7 @@
 .star8.data-v-d5d6b134 {
   width: 300rpx;
   height: 300rpx;
-  left: 500rpx;
+  left: 700rpx;
   top: 300rpx;
   -webkit-animation-name: star8-data-v-d5d6b134;
           animation-name: star8-data-v-d5d6b134;
@@ -208,13 +219,13 @@ to {
 }
 @-webkit-keyframes star7-data-v-d5d6b134 {
 to {
-    left: -400rpx;
+    left: -200rpx;
     top: 800rpx;
 }
 }
 @keyframes star7-data-v-d5d6b134 {
 to {
-    left: -400rpx;
+    left: -200rpx;
     top: 800rpx;
 }
 }

@@ -1,24 +1,17 @@
 {
   "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
-      "path": "pages/login/login",
-      "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#d2def9"
       }
     }, {
       "path": "pages/community/community",
       "style": {
         "navigationBarTitleText": "社区",
-        "navigationBarTextStyle": "white",
-        "navigationBarBackgroundColor": "#4fdcb9",
+        "navigationBarBackgroundColor": "#d2def9",
         "enablePullDownRefresh": false
       }
 
@@ -26,7 +19,7 @@
       "path": "pages/my/my",
       "style": {
         "navigationBarTitleText": "",
-        "navigationBarBackgroundColor": "#72e7d8",
+        "navigationBarBackgroundColor": "#d2def9",
         "enablePullDownRefresh": false
       }
 
@@ -87,7 +80,8 @@
       "path": "pages/choice/choice",
       "style": {
         "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#d2def9"
       }
 
     }, {
@@ -99,10 +93,19 @@
 
     },
     {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#71e6d3"
+      }
+    },
+    {
       "path": "pages/schedule/schedule",
       "style": {
         "navigationBarTitleText": "我的日程",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#d2def9"
       }
 
     }, {
@@ -116,7 +119,8 @@
       "path": "pages/register/register",
       "style": {
         "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "enablePullDownRefresh": false,
+        "navigationBarBackgroundColor": "#71e6d3"
       }
 
     }
@@ -124,7 +128,220 @@
             "path" : "pages/AddDynamics/AddDynamics",
             "style" :                                                                                    
             {
-                "navigationBarBackgroundColor": "#4fdcb9",
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#d2def9",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/timetree/timetree",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "日历和任务",
+                "enablePullDownRefresh": true,
+                "backgroundColor": "#d2def9",
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/treesinfo/treesinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "日程树",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/challenge/challenge",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "挑战",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/exchange/exchange",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分兑换",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#fff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/exchangeinfo/exchangeinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分兑换",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/friendsRoom/friendsRoom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "好友活动室",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/room/room",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "好友活动室",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/card/card",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/countTime/countTime",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "倒计时",
+                "enablePullDownRefresh": true,
+                "backgroundColor": "#d2def9",
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/modifyip/modifyip",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改IP地址",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/dynamicinfo/dynamicinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/kinds/kinds",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/addcounttime/addcounttime",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personalhomepage/Personalhomepage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/talk/talk",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#d2def9"
+            }
+            
+        }
+        ,{
+            "path" : "pages/people/people",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/addpageageinfo/addpageageinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加收货信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/changepageageinfo/changepageageinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "更改收货信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/frinedslist/frinedslist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的好友",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/friendoption/friendoption",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -132,31 +349,36 @@
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#eaf1fe",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "Timer",
+    "navigationBarBackgroundColor": "#d2def9",
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "list": [{
       "text": "",
       "pagePath": "pages/index/index",
-      "iconPath": "static/home2.png",
-      "selectedIconPath": "static/home2-active.png"
+      "iconPath": "static/clock.png",
+      "selectedIconPath": "static/clock-active.png"
     }, {
       "text": "",
       "pagePath": "pages/community/community",
-      "iconPath": "static/community-fill.png",
-      "selectedIconPath": "static/community-fill-active.png"
+      "iconPath": "static/chat.png",
+      "selectedIconPath": "static/chat-active.png"
     }, {
       "text": "",
-      "pagePath": "pages/schedule/schedule",
+      "pagePath": "pages/timetree/timetree",
       "iconPath": "static/schedule.png",
       "selectedIconPath": "static/schedule-active.png"
     }, {
       "text": "",
+      "pagePath": "pages/countTime/countTime",
+      "iconPath": "static/CountdownOutline.png",
+      "selectedIconPath": "static/CountdownOutline-active.png"
+    }, {
+      "text": "",
       "pagePath": "pages/my/my",
-      "iconPath": "static/my(2).png",
-      "selectedIconPath": "static/my(2)-active.png"
+      "iconPath": "static/my.png",
+      "selectedIconPath": "static/my-active.png"
     }]
   }
 }

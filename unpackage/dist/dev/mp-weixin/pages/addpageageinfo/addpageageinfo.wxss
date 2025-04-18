@@ -1,0 +1,37 @@
+
+.user-info.data-v-e07e91b4 {
+    width: 600rpx;
+    margin: 40rpx auto;
+}
+.user-info image.data-v-e07e91b4 {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.people.data-v-e07e91b4,.phone.data-v-e07e91b4,.address.data-v-e07e91b4 {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    margin-bottom: 40rpx;
+}
+.name.data-v-e07e91b4,.tellphone.data-v-e07e91b4,.shou-address.data-v-e07e91b4 {
+    font-size: 34rpx;
+    color: #969696;
+}
+.user-info input.data-v-e07e91b4 {
+    width: 500rpx;
+    height: 60rpx;
+    border-bottom: 2rpx solid #8397e2;
+}
+.done.data-v-e07e91b4 {
+    width: 200rpx;
+    margin: 40rpx auto;
+    height: 60rpx;
+    border-radius: 20rpx;
+    background-color: #8397e2;
+    text-align: center;
+    font-size: 28rpx;
+    color: #ffffff;
+    line-height: 60rpx;
+}
+

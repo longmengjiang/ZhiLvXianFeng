@@ -1,14 +1,22 @@
 
+.content.data-v-4080e454 {
+  padding: 40rpx;
+}
 .sex.data-v-4080e454 {
-  width: 730rpx;
+  color: #8397e2;
+  margin: 0 auto;
+  width: 500rpx;
+  border-radius: 20rpx;
   font-size: 28rpx;
   line-height: 60rpx;
+  background-color: ;
   height: 60rpx;
   border-bottom: 2rpx solid #7c8083;
   padding-left: 20rpx;
 }
 .move.data-v-4080e454 {
-  background-color: #72e4da;
+  background-color: #8397e2;
+  color: #fff;
 }
 .done.data-v-4080e454 {
   width: 200rpx;
@@ -17,7 +25,8 @@
   border-radius: 20rpx;
   height: 60rpx;
   margin: 0 auto;
+  color: #ffffff;
   margin-top: 100rpx;
-  background-color: #72e4da;
+  background-color: #8397e2;
 }
 

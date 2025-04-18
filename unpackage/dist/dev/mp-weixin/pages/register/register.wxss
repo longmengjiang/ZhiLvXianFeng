@@ -1,5 +1,6 @@
 
 .container.data-v-891c2434 {
+  overflow: hidden;
   height: 100vh;
   background-color: #ffffff;
 }
@@ -10,7 +11,7 @@
   z-index: 22;
   background-image: linear-gradient(to bottom, #71e6d3, #7cb7f8);
 }
-.head .avatar.data-v-891c2434{
+.head .avatar.data-v-891c2434 {
   position: absolute;
   width: 130rpx;
   height: 130rpx;
@@ -39,12 +40,22 @@
   width: 50rpx;
   height: 50rpx;
 }
-.phone.data-v-891c2434,.lock.data-v-891c2434,.code.data-v-891c2434,.email.data-v-891c2434,.security.data-v-891c2434,.name.data-v-891c2434 {
+.phone.data-v-891c2434,
+.lock.data-v-891c2434,
+.code.data-v-891c2434,
+.email.data-v-891c2434,
+.security.data-v-891c2434,
+.name.data-v-891c2434 {
   display: flex;
   font-size: 22rpx;
   margin-bottom: 40rpx;
 }
-.phone image.data-v-891c2434,.code image.data-v-891c2434,.email image.data-v-891c2434,.security image.data-v-891c2434,.name image.data-v-891c2434,.lock image.data-v-891c2434 {
+.phone image.data-v-891c2434,
+.code image.data-v-891c2434,
+.email image.data-v-891c2434,
+.security image.data-v-891c2434,
+.name image.data-v-891c2434,
+.lock image.data-v-891c2434 {
   margin-right: 20rpx;
 }
 .code .yanzhengma.data-v-891c2434 {
@@ -73,15 +84,8 @@
   font-weight: 600;
   color: #477bff;
 }
-.warn.data-v-891c2434 {
-  font-size: 22rpx;
-  margin-left: 40rpx;
-  line-height: 40rpx;
-  margin-top: -30rpx;
-  color: crimson;
-}
-.lock .warn.data-v-891c2434 {
-  line-height: 70rpx;
+input.data-v-891c2434 {
+  width: 320rpx;
 }
 .get-box.data-v-891c2434 {
   width: 150rpx;
@@ -89,10 +93,37 @@
   margin-left: 100rpx;
   text-align: center;
   line-height: 50rpx;
-  background-color: #71e6d3;
+  color: #ffffff;
+  background-color: #ae97cb;
 }
 .count.data-v-891c2434 {
   font-size: 30rpx;
   font-weight: 600;
+}
+.msg.data-v-891c2434 {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  width: 550rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  z-index: 99;
+  left: 50%;
+  -webkit-transform: translateX(-295rpx);
+          transform: translateX(-295rpx);
+  background-color: #ffffff;
+}
+.yes.data-v-891c2434 {
+  padding: 10rpx;
+  width: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  color: #ffffff;
+  background-color: #ae97cb;
 }
 

@@ -1,0 +1,49 @@
+
+.calendar-box.data-v-0c958ec4 {
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: rgba(168, 178, 196, 0.9);
+}
+.calendar.data-v-0c958ec4 {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.month.data-v-0c958ec4,
+.days.data-v-0c958ec4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100rpx;
+}
+.month.data-v-0c958ec4 {
+  border-radius: 10rpx;
+}
+.month .number.data-v-0c958ec4 {
+  color: #606475;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.month .mon.data-v-0c958ec4 {
+  color: #FFFFFF;
+}
+.days.data-v-0c958ec4 {
+  width: 60rpx;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+}
+.days .number.data-v-0c958ec4 {
+  font-size: 26rpx;
+}
+.col.data-v-0c958ec4 {
+  background-color: #eef0f3;
+  color: #6c33c0;
+  font-weight: 600;
+}
+

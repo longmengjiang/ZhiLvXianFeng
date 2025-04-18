@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "日程树",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#d2def9",
+  "usingComponents": {
+    "calendarline": "/components/calendarline/calendarline",
+    "tree": "/components/tree/tree"
+  }
+}

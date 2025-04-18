@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
     "pages/community/community",
     "pages/my/my",
@@ -13,43 +12,72 @@
     "pages/autograph/autograph",
     "pages/choice/choice",
     "pages/homepage/homepage",
+    "pages/login/login",
     "pages/schedule/schedule",
     "pages/add/add",
     "pages/register/register",
-    "pages/AddDynamics/AddDynamics"
+    "pages/AddDynamics/AddDynamics",
+    "pages/timetree/timetree",
+    "pages/treesinfo/treesinfo",
+    "pages/challenge/challenge",
+    "pages/exchange/exchange",
+    "pages/exchangeinfo/exchangeinfo",
+    "pages/friendsRoom/friendsRoom",
+    "pages/room/room",
+    "pages/card/card",
+    "pages/countTime/countTime",
+    "pages/modifyip/modifyip",
+    "pages/setting/setting",
+    "pages/dynamicinfo/dynamicinfo",
+    "pages/kinds/kinds",
+    "pages/addcounttime/addcounttime",
+    "pages/Personalhomepage/Personalhomepage",
+    "pages/talk/talk",
+    "pages/message/message",
+    "pages/people/people",
+    "pages/addpageageinfo/addpageageinfo",
+    "pages/changepageageinfo/changepageageinfo",
+    "pages/frinedslist/frinedslist",
+    "pages/friendoption/friendoption"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#eaf1fe",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "Timer",
+    "navigationBarBackgroundColor": "#d2def9",
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "list": [
       {
         "text": "",
         "pagePath": "pages/index/index",
-        "iconPath": "static/home2.png",
-        "selectedIconPath": "static/home2-active.png"
+        "iconPath": "static/clock.png",
+        "selectedIconPath": "static/clock-active.png"
       },
       {
         "text": "",
         "pagePath": "pages/community/community",
-        "iconPath": "static/community-fill.png",
-        "selectedIconPath": "static/community-fill-active.png"
+        "iconPath": "static/chat.png",
+        "selectedIconPath": "static/chat-active.png"
       },
       {
         "text": "",
-        "pagePath": "pages/schedule/schedule",
+        "pagePath": "pages/timetree/timetree",
         "iconPath": "static/schedule.png",
         "selectedIconPath": "static/schedule-active.png"
       },
       {
         "text": "",
+        "pagePath": "pages/countTime/countTime",
+        "iconPath": "static/CountdownOutline.png",
+        "selectedIconPath": "static/CountdownOutline-active.png"
+      },
+      {
+        "text": "",
         "pagePath": "pages/my/my",
-        "iconPath": "static/my(2).png",
-        "selectedIconPath": "static/my(2)-active.png"
+        "iconPath": "static/my.png",
+        "selectedIconPath": "static/my-active.png"
       }
     ]
   },

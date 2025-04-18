@@ -1,0 +1,99 @@
+
+.content .bg-img.data-v-37418964 {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.con.data-v-37418964 {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.move.data-v-37418964 {
+    color: #4f2f7f !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.head.data-v-37418964 {
+    margin-top: 20rpx;
+    display: flex;
+    padding: 0 100rpx;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(170, 179, 196, 0.7);
+    height: 100rpx;
+}
+.head-item.data-v-37418964 {
+    color: #ffffff;
+    font-size: 28rpx;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 20rpx;
+    line-height: 100rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+}
+.none.data-v-37418964 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26rpx;
+    color: #7e8087;
+    height: 400rpx;
+}
+.none image.data-v-37418964{
+    width: 200rpx;
+    height: 100rpx;
+}
+.hot.data-v-37418964 {
+    padding: 40rpx;
+    background-color: #ffffff;
+}
+.hot .title.data-v-37418964 {
+    font-weight: 700;
+    margin-bottom: 30rpx;
+}
+.hot-items.data-v-37418964 {
+    width: 300rpx;
+    margin-bottom: 40rpx;
+    border-radius: 20rpx;
+    background-color: #f3f0f8;
+}
+.hot-items image.data-v-37418964 {
+    width: 300rpx;
+    height: 150rpx;
+    border-radius: 20rpx;
+}
+.hot-title.data-v-37418964 {
+    margin-left: 10rpx;
+    font-size: 28rpx;
+}
+.hot .time.data-v-37418964 {
+    margin-left: 10rpx;
+    color: #a2a0a5;
+    font-size: 24rpx;
+}
+.hot .peoples.data-v-37418964 {
+    margin-left: 10rpx;
+    color: #a2a0a5;
+    font-size: 24rpx;
+}
+.hot-con.data-v-37418964 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+

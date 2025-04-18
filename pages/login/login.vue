@@ -1,21 +1,24 @@
 <template>
   <view class="container">
+    <!-- 登陆页头部 -->
     <view class="head">
-      <image src="../../static/default.jpg" mode="" class="avatar"></image>
+      <image :src="avatarimg" mode="" class="avatar"></image>
       <image src="../../static/lang.png" mode="" class="lang"></image>
     </view>
+    <!-- 表单收集 -->
     <view class="body">
       <view class="login-box">
+        <!-- 输入昵称 -->
         <view class="name">
           <image src="../../static/edit-write.png" mode=""></image>
-          <input type="text" placeholder="输入昵称" v-model="name">
+          <input type="text" placeholder="输入昵称" v-model.trim="name" @blur="yanname(name)">
         </view>
+        <!-- 输入手机号 -->
         <view class="phone">
           <image src="../../static/phone.png" mode=""></image>
-          <input type="number" placeholder="输入手机号" v-model="phone" @click="yanphone">
-          <!-- <view class="warn" v-show="flag1">! 请输入正确的手机号</view> -->
+          <input type="number" placeholder="输入手机号" v-model.number="phone" @blur="isTelCode(phone)">
         </view>
-        <view class="warn" v-show="flag1">! 请输入正确的手机号</view>
+        <!-- 输入密码 -->
         <view class="lock" @click="yanpassword">
           <image src="../../static/lock.png" mode=""></image>
           <input :password="isPassword" type="text" placeholder="请输入密码" v-model="password" @input="showeye"/>
@@ -23,10 +26,10 @@
             <image :src="eyeurl" mode="" class="eye" v-show="show"></image>
           </view>
         </view>
-        <view class="warn" v-show="flag2">! 密码错误</view>
+        <!-- 输入验证码 -->
         <view class="code">
           <image src="../../static/security.png" mode=""></image>
-          <input type="text" placeholder="输入验证码" v-model="yanzheng" @click="shuru">
+          <input type="text" placeholder="输入验证码" v-model="yanzheng" @blur="yangzhengisright(yanzheng)">
           <view class="yanzhengma">
           		<view class="canvas-img-code" @click="refresh()">
                 <canvas :style="{width:width+'px',height:height+'px'}" canvas-id="imgcanvas" @error="canvasIdErrorCallback"></canvas>
@@ -34,9 +37,7 @@
               <p class="tip">注意区分大小写</p>
           </view>
         </view>
-        <view class="warn" v-show="flag3">
-          ！验证码错误
-        </view>
+        <!-- 登陆按钮 -->
         <view class="login-btn" @click="login()">
           登录
         </view>
@@ -47,6 +48,15 @@
         </view>
       </view>
     </view>
+    <!-- 提示信息框 -->
+    <view class="msg" :style="{'top':top+'rpx'}">
+      <view class="text">
+        {{msg}}
+      </view>
+      <view class="yes" @click="changetop">
+        确定
+      </view>
+    </view>
   </view>
 </template>
 
@@ -54,6 +64,7 @@
 var _this;
 
 export default {
+  // 基本数据
 	data() {
 		return {
       phone:'',
@@ -64,43 +75,84 @@ export default {
       isPassword:true,
       password:'',
       userId:'',
-      flag1:0,
-      flag2:0,
-      flag3:0,
       token:'',
       yanzheng:"",
 			verCode: "", //验证码
 			width: 120,
-			height: 45
+			height: 45,
+      top: -500,
+      msg: '账号或者密码错误',
+      avatarimg:'',
+      ip:''
 		}
 	},
-	components: {
-		
-	},
+  onLoad() {
+    // 获取本地头像
+    this.avatarimg = uni.getStorageSync('avatar')
+    // 获取IP地址
+    this.getip()
+  },
 	onShow() {
+    // 页面展示时初始验证码
 		_this = this;
 		setTimeout(function() {
 			_this.init();
 		}, 1000)
 	},
 	methods: {
-    yanphone() {
-      this.flag1 = 0
+    // 获取所处IP地址
+    async getip() {
+      await this.request({
+        url:'8002/ucenterservice/ucenter/getIP',
+        method:'GET'
+      }).then(res=> {
+        if(res.code === 200) {
+          console.log(res.data.ip)
+          this.ip = res.data.ip
+          uni.setStorageSync('ip',this.ip)
+        }
+      }).catch(err=> {
+        console.log('错误：',err)
+      })
     },
-    yanpassword() {
-      this.flag2 = 0
+    // 显示提示框
+    changetop() {
+      this.top = -500
     },
-    shuru() {
-      this.flag3 = 0
+    // 校验手机号码
+    isTelCode(str) {
+      //正则表达式定义手机号正确格式
+      let reg = /^[1][3,4,5,7,8,9][0-9]{9}$/
+      if (!reg.test(str)) {
+        this.msg = '请输入正确的手机号'
+        this.top = 50
+      }
     },
+    // 验证昵称
+    yanname(name) {
+      if (name.length > 10) {
+        this.msg = '昵称过长,请输入10个以内的字符'
+        this.top = 50
+      }
+    },
+    // 验证验证码是否正确
+    yangzhengisright(str) {
+      if(str !=this.verCode) {
+        this.msg = '验证码错误'
+        this.top = 50
+      }
+    },
+    // 去往注册页链接
     toRegister() {
       uni.navigateTo({
         url:'/pages/register/register'
       })
     },
+    // 显示密码
     showeye() {
       this.show = true
     },
+    // 改变密码是否可看
     changeeye() {
       if(this.eye == true) {
         this.eyeurl = '../../static/eye.png'
@@ -112,17 +164,16 @@ export default {
       }
       this.eye = !this.eye
     },
+    // 点击登陆按钮请求接口登陆
     async login() {
-      if(this.phone.length!==11) {
-        this.flag1 = 1
-      }
-      if(this.yanzheng!==this.verCode) {
-        this.flag3 = 1;
-        return
-      }
-      await this.request({url:'8002/ucenterservice/ucenter/login',method:'POST',data:{"mobile":this.phone,"password":this.password,"nickname":this.name}}).then(res=> {
+      await this.request({
+        url:'8002/ucenterservice/ucenter/login',
+        method:'POST',
+        data:{"mobile":this.phone,"password":this.password,"nickname":this.name},
+        }).then(res=> {
         if(res.code === 200) {
           this.token = res.data.token
+          uni.setStorageSync('token',res.data.token)
           // this.getUserId()
           uni.switchTab({
             // url:`/pages/index/index?userId=${this.name}`
@@ -132,18 +183,14 @@ export default {
             title:'登录成功'
           })
         }
+        if(res.code === 201) {
+          this.msg = res.message
+          this.top = 50
+        }
       }).catch(err=> {
           console.log('表单的错误：',err)
         })
-    }, 
-    // async getUserId() {
-    //   await this.request({url:'8002/ucenterservice/ucenter/getMemberInfo',method:'GET',data:{"token":this.token}}).then(res=> {
-    //     if(res.code === 200) {
-    //       console.log(res.data)
-    //       this.userId = res.userId
-    //     }
-    //   })
-    // },
+    },  
 		// 初始化验证码
 		init: function() {
 			console.log('start');
@@ -207,6 +254,7 @@ export default {
 
 <style scoped>
 .container {
+  overflow: hidden;
   height: 100vh;
   background-color: #ffffff; 
 }
@@ -281,13 +329,6 @@ export default {
   font-weight: 600;
   color: #477bff;
 }
-.warn {
-  font-size: 22rpx;
-  margin-left: 40rpx;
-  margin-top: -30rpx;
-  line-height: 40rpx;
-  color: crimson;
-}
 .tip {
   color: #55aaff;
   font-weight: 600;
@@ -300,4 +341,30 @@ export default {
   width: 50rpx;
   height: 50rpx;
 }
+.msg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+    width: 550rpx;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-295rpx);
+    background-color: #ffffff;
+  }
+
+  .yes {
+    padding: 10rpx;
+    width: 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+    color: #ffffff;
+    background-color: #ae97cb;
+  }
 </style>

@@ -1,0 +1,33 @@
+
+.content.data-v-1d964180 {
+    padding: 40rpx;
+}
+.content .bg-img.data-v-1d964180 {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.add-task.data-v-1d964180 {
+    position: absolute;
+    right: 40rpx;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 60rpx;
+    background-color: #08796f;
+}
+.time.data-v-1d964180 {
+    margin-left: 10rpx;
+    font-size: 36rpx;
+    color: #ae97cb;
+    font-weight: 600;
+}
+

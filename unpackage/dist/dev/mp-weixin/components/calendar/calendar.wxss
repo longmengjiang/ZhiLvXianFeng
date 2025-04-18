@@ -1,0 +1,134 @@
+
+.calendar-wrapper.data-v-b14ca078 {
+    color: #000;
+    width: 670rpx;
+    border-radius: 40rpx;
+    background-color: #fff;
+    font-size: 28rpx;
+    text-align: center;
+    margin-bottom: 60rpx;
+    padding-bottom: 10rpx;
+}
+.header.data-v-b14ca078 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90rpx;
+    font-size: 32rpx;
+    color: #ae97cb;
+    font-weight: bold;
+    border-bottom: 4rpx solid #ae97cb;
+}
+.pre-img.data-v-b14ca078,
+.next-img.data-v-b14ca078 {
+    width: 50rpx;
+    height: 50rpx;
+}
+.week.data-v-b14ca078 {
+    display: flex;
+    align-items: center;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.week view.data-v-b14ca078 {
+    flex: 1;
+}
+.content.data-v-b14ca078 {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+.days.data-v-b14ca078 {
+    transition: top 0.3s;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.item.data-v-b14ca078 {
+    position: relative;
+    display: block;
+    height: 80rpx;
+    line-height: 80rpx;
+    width: calc(100% / 7);
+}
+.day.data-v-b14ca078 {
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    border-radius: 60rpx;
+}
+/* 点击选择的日期 */
+.choose.data-v-b14ca078 {
+    background-color: #fe7379;
+}
+.nolm.data-v-b14ca078 {
+    opacity: 0.5;
+}
+/* 工作日颜色 */
+.isWorkDay.data-v-b14ca078 {
+}
+.notSigned.data-v-b14ca078 {
+    font-style: normal;
+    width: 8rpx;
+    height: 8rpx;
+    background: #fa7268;
+    border-radius: 10rpx;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    pointer-events: none;
+}
+.today.data-v-b14ca078 {
+    color: #fff;
+    background-color: #ae97cb;
+}
+.workDay.data-v-b14ca078 {
+    font-style: normal;
+    width: 8rpx;
+    height: 8rpx;
+    background: #4d7df9;
+    border-radius: 10rpx;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    pointer-events: none;
+}
+.markDay.data-v-b14ca078 {
+    font-style: normal;
+    width: 8rpx;
+    height: 8rpx;
+    background: #fc7a64;
+    border-radius: 10rpx;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    pointer-events: none;
+}
+.hide.data-v-b14ca078 {
+    height: 80rpx !important;
+}
+.dropDown.data-v-b14ca078 {
+    width: 50rpx;
+    height: 50rpx;
+    background-color: #fc7a64;
+}
+.weektoggle.data-v-b14ca078 {
+    width: 100rpx;
+    height: 30rpx;
+    position: relative;
+    bottom: -55rpx;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 0 0 20rpx 20rpx;
+    padding: 10rpx;
+}
+.weektoggle image.data-v-b14ca078 {
+    width: 40rpx;
+    height: 40rpx;
+}
+

@@ -1,5 +1,6 @@
 
 .container.data-v-b237504c {
+  overflow: hidden;
   height: 100vh;
   background-color: #ffffff;
 }
@@ -75,13 +76,6 @@
   font-weight: 600;
   color: #477bff;
 }
-.warn.data-v-b237504c {
-  font-size: 22rpx;
-  margin-left: 40rpx;
-  margin-top: -30rpx;
-  line-height: 40rpx;
-  color: crimson;
-}
 .tip.data-v-b237504c {
   color: #55aaff;
   font-weight: 600;
@@ -93,5 +87,31 @@
 .eye-box.data-v-b237504c {
   width: 50rpx;
   height: 50rpx;
+}
+.msg.data-v-b237504c {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+    width: 550rpx;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    z-index: 99;
+    left: 50%;
+    -webkit-transform: translateX(-295rpx);
+            transform: translateX(-295rpx);
+    background-color: #ffffff;
+}
+.yes.data-v-b237504c {
+    padding: 10rpx;
+    width: 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+    color: #ffffff;
+    background-color: #ae97cb;
 }
 

@@ -1,0 +1,1 @@
+<view class="route data-v-e2198d78"><block wx:for="{{timeList}}" wx:for-item="item" wx:for-index="index" wx:key="id"><treeinfoitems vue-id="{{'4f747042-1-'+index}}" img="{{item.imgurl}}" tree="{{item.tree}}" create="{{item.create1}}" finish="{{item.finish1}}" treeid="{{item.id}}" class="data-v-e2198d78" bind:__l="__l"></treeinfoitems></block></view>

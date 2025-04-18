@@ -1,4 +1,14 @@
 
+.content .bg-img.data-v-136896a6 {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 .content.data-v-136896a6 {
     padding: 40rpx;
 }
@@ -16,11 +26,10 @@
 .progress-box .progress .progress-head.data-v-136896a6 {
   margin-bottom: 30rpx;
   color: #454949;
+  font-weight: 600;
 }
 .progress-box .progress .progress-head .time.data-v-136896a6 {
-  display: flex;
-  margin-left: 10rpx;
-  color: #72e4da;
+  color: #ae97cb;
   font-size: 34rpx;
   font-weight: 700;
 }
@@ -84,13 +93,14 @@
     box-shadow: 0 5rpx 10rpx 0 #cbd1dc;
     width: 135rpx;
     height: 80rpx;
+    color: #ffffff;
     text-align: center;
     line-height: 80rpx;
     border-radius: 20rpx;
-    background-color: #72e4da;
+    background-color: #ae97cb;
 }
 .kindname.data-v-136896a6 {
-    color: #72e4da;
+    color: #ae97cb;
     font-weight: 700;
     font-size: 34rpx;
 }

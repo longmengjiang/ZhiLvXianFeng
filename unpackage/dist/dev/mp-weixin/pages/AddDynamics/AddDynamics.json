@@ -1,5 +1,8 @@
 {
-  "navigationBarBackgroundColor": "#4fdcb9",
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#d2def9",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-file-picker": "/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker"
+  }
 }

@@ -15,7 +15,42 @@
   border-radius: 20rpx;
   height: 60rpx;
   margin: 0 auto;
+  color: #ffffff;
   margin-top: 100rpx;
-  background-color: #72e4da;
+  background-color: #8397e2;
+}
+.choise.data-v-db675620 {
+  width: 500rpx;
+  padding: 20rpx;
+  display: flex;
+  border-radius: 20rpx;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #ffffff;
+  margin-bottom: 40rpx;
+  background-color: #8397e2;
+}
+.detail-head.data-v-db675620 {
+  display: flex;
+}
+.detail-head image.data-v-db675620 {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.address-detail.data-v-db675620 {
+  width: 500rpx;
+  padding: 20rpx;
+  color: #ffffff;
+  background-color: #8397e2;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.address-detail textarea.data-v-db675620 {
+  width: 510rpx;
+  height: 200rpx;
 }
 

@@ -3,42 +3,32 @@
   padding: 40rpx;
 }
 .base.data-v-3df0de86 {
-  width: 670rpx;
-  border-radius: 10rpx;
-  border: 2rpx solid #cbd1dc;
-  border-top: 0;
-  box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
+  width: 590rpx;
 }
-.avatar.data-v-3df0de86,.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86{
+.avatar.data-v-3df0de86,.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86,.id.data-v-3df0de86,.people.data-v-3df0de86,.phone.data-v-3df0de86,.address.data-v-3df0de86 {
   font-size: 28rpx;
   height: 150rpx;
   display: flex;
-  border-radius: 10rpx;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2rpx solid #7c8083;
+  border-bottom: 2rpx solid #bababa;
 }
-.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86 {
+.name.data-v-3df0de86,.address.data-v-3df0de86,.sex.data-v-3df0de86,.erweima.data-v-3df0de86,.id.data-v-3df0de86,.people.data-v-3df0de86,.phone.data-v-3df0de86,.address.data-v-3df0de86 {
   height: 100rpx;
 }
 .avatar .avatar-img.data-v-3df0de86 {
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
 }
 .erweima-img.data-v-3df0de86 {
   width: 50rpx;
   height: 50rpx;
 }
-.avatar ._p.data-v-3df0de86,.name ._p.data-v-3df0de86,.address ._p.data-v-3df0de86,.sex ._p.data-v-3df0de86,.erweima ._p.data-v-3df0de86 {
-  margin-left: 40rpx;
-}
-.avatar .img-box.data-v-3df0de86,.name .name-box.data-v-3df0de86,.address .address-box.data-v-3df0de86,.sex .sex-box.data-v-3df0de86,.erweima .erweima-box.data-v-3df0de86 {
-  margin-right: 40rpx;
+.avatar .img-box.data-v-3df0de86,.name .name-box.data-v-3df0de86,.address .address-box.data-v-3df0de86,.sex .sex-box.data-v-3df0de86,.erweima .erweima-box.data-v-3df0de86,.id .id-box.data-v-3df0de86,.people .people-box.data-v-3df0de86,.phone .phone-box.data-v-3df0de86,.address .address-box.data-v-3df0de86 {
   display: flex;
   align-items: center;
 }
-.img-box .right.data-v-3df0de86,.name-box .right.data-v-3df0de86,.address-box .right.data-v-3df0de86,.sex-box .right.data-v-3df0de86,.erweima .right.data-v-3df0de86,.jurisdiction .right.data-v-3df0de86,.setting .right.data-v-3df0de86{
+.img-box .right.data-v-3df0de86,.name-box .right.data-v-3df0de86,.address-box .right.data-v-3df0de86,.sex-box .right.data-v-3df0de86,.erweima .right.data-v-3df0de86,.people .right.data-v-3df0de86,.setting .right.data-v-3df0de86,.id .right.data-v-3df0de86,.phone .right.data-v-3df0de86,.address .right.data-v-3df0de86 {
   width: 30rpx;
   margin-left: 10rpx;
   height: 30rpx;
@@ -47,13 +37,14 @@
   width: 30rpx;
   height: 30rpx;
 }
-.autograph.data-v-3df0de86,.jurisdiction.data-v-3df0de86,.setting.data-v-3df0de86 {
+.autograph.data-v-3df0de86,.setting.data-v-3df0de86,.shou.data-v-3df0de86,.base.data-v-3df0de86 {
   padding: 40rpx;
   margin-top: 60rpx;
   border-radius: 10rpx;
   box-shadow: 0 10rpx 10rpx 0 #cbd1dc;
 }
 .setting.data-v-3df0de86 {
+  font-size: 28rpx;
   margin-top: 0;
 }
 .autograph .autograph-head.data-v-3df0de86 {
@@ -67,11 +58,15 @@
   width: 40rpx;
   height: 40rpx;
 }
+.autograph.data-v-3df0de86 {
+  font-size: 28rpx;
+}
 .autograph .autograph-text.data-v-3df0de86 {
   margin-top: 10rpx;
 }
-.jurisdiction.data-v-3df0de86,.setting.data-v-3df0de86 {
+.setting.data-v-3df0de86 {
   display: flex;
+  margin-top: 20rpx;
   justify-content: space-between;
 }
 .save.data-v-3df0de86 {
@@ -82,6 +77,7 @@
   height: 80rpx;
   margin: 0 auto;
   margin-top: 100rpx;
-  background-color: #72e4da;
+  color: #fff;
+  background-color: #8397e2;
 }
 

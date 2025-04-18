@@ -1,15 +1,16 @@
 <template>
   <view class="content">
+    <image src="../../static/bg.png" mode="" class="bg-img"></image>
     <view class="progress-box">
       <view class="progress">
         <view class="progress-head">
           <p>定时</p>
-          <p class="time">{{value}}</p>
+          <p class="time">{{value}}分钟</p>
           <view class="page">
             <view style="width: 300px; margin: 60px 20px;">
               <cu-progress v-model="value" min="0" max="100" height="32" :use-slot="true" @input="endSlider"
-                active-color="#6fe8d7" inactive-color="#dbefee">
-                <view style="background: #ffffff;border-radius: 100%;width: 14px;height: 14px;">
+                active-color="#ae97cb" inactive-color="#cedbf5">
+                <view style="background: #e9e6f9;border-radius: 100%;width: 15px;height: 15px;">
                 </view>
           			 </cu-progress>
             </view>
@@ -42,8 +43,10 @@
 </template>
 
 <script>
+  // 导入自定义进度条组件
   import cuProgress from '../../components/cuProgress/cuProgress.vue'
   export default {
+    // 基础数据
     data() {
       return {
         value: 0,
@@ -52,38 +55,39 @@
         kindname: '',
         itemsList: [{
             id: '001',
+            imgurl: '../../static/task.png',
+            text: '写作业'
+          },
+          {
+            id: '002',
+            imgurl: '../../static/life.png',
+            text: '生活'
+          },
+          {
+            id: '003',
             imgurl: '../../static/sports.png',
             text: '运动'
           },
           {
-            id: '002',
-            imgurl: '../../static/dinner.png',
-            text: '吃饭'
-          },
-          {
-            id: '003',
-            imgurl: '../../static/studying.png',
-            text: '学习'
-          },
-          {
             id: '004',
-            imgurl: '../../static/clean.png',
-            text: '家务'
+            imgurl: '../../static/food.png',
+            text: '做美食'
           },
           {
             id: '005',
-            imgurl: '../../static/work.png',
-            text: '工作'
+            imgurl: '../../static/examination.png',
+            text: '考试'
           },
           {
             id: '006',
-            imgurl: '../../static/trophy.png',
-            text: '挑战'
+            imgurl: '../../static/work.png',
+            text: '工作'
           }
         ]
       }
     },
     onLoad(option) {
+      // 获取上个页面传过来的数据
       this.userId = option.userId
       // console.log(this.userId)
     },
@@ -95,27 +99,34 @@
         // console.log(value)
         this.value = value.target.__args__[0]
       },
+      // 类型
       kind(text) {
         this.kindname = '(' + text + ')'
       },
+      // 添加进入任务
       async addChoice() {
         await this.request({
           url: '8001/loservice/lotask/addTask',
           method: 'POST',
           data: {
-            "userId": this.userId,
+            "userId": uni.getStorageSync('userid'),
             "task": this.text,
             "taskTime": this.value,
             "taskType": this.kindname
           }
         }).then(res => {
           if (res.code === 200) {
+            uni.navigateTo({
+              url:'/pages/schedule/schedule'
+            })
             uni.showToast({
               title: '添加成功！'
             })
           }
         }).catch(err => {
-          console.log(err)
+          uni.showToast({
+            title:'添加失败！'
+          })
         })
       }
     },
@@ -126,6 +137,16 @@
 </script>
 
 <style scoped>
+  .content .bg-img {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
   .content {
     padding: 40rpx;
   }
@@ -145,11 +166,10 @@
 .progress-box .progress .progress-head {
   margin-bottom: 30rpx;
   color: #454949;
+  font-weight: 600;
 }
 .progress-box .progress .progress-head .time {
-  display: flex;
-  margin-left: 10rpx;
-  color: #72e4da;
+  color: #ae97cb;
   font-size: 34rpx;
   font-weight: 700;
 }
@@ -222,14 +242,15 @@
     box-shadow: 0 5rpx 10rpx 0 #cbd1dc;
     width: 135rpx;
     height: 80rpx;
+    color: #ffffff;
     text-align: center;
     line-height: 80rpx;
     border-radius: 20rpx;
-    background-color: #72e4da;
+    background-color: #ae97cb;
   }
 
   .kindname {
-    color: #72e4da;
+    color: #ae97cb;
     font-weight: 700;
     font-size: 34rpx;
   }

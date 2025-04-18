@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#d2def9",
   "usingComponents": {
     "cu-progress": "/components/cuProgress/cuProgress"
   }

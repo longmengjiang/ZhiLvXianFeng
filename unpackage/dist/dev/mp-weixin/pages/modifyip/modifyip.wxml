@@ -1,0 +1,1 @@
+<view class="content data-v-add5f8b4"><view class="id-box data-v-add5f8b4"><view class="_p data-v-add5f8b4">当前IP地址为:</view><view class="ip _p data-v-add5f8b4">{{IP}}</view></view><view data-event-opts="{{[['tap',[['getip',['$event']]]]]}}" class="btn data-v-add5f8b4" bindtap="__e">获取当前IP地址</view></view>

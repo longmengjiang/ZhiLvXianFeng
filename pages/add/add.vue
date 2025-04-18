@@ -1,4 +1,5 @@
 <template>
+  <!-- 添加日程结构 -->
   <view class="content">
     <view class="add-con">
       <image src="../../static/pen2.png" mode=""></image>
@@ -25,6 +26,7 @@
 
 <script>
   export default {
+    // 基本数据
     data() {
       return {
         single:'2022-11-22 12:24:24',
@@ -32,6 +34,7 @@
       }
     },
     methods: {
+      // 去设置今日任务
       toSchedule() {
         uni.switchTab({
           url:'/pages/schedule/schedule'

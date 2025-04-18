@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "好友活动室",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#d2def9",
+  "usingComponents": {
+    "tree": "/components/tree/tree"
+  }
+}

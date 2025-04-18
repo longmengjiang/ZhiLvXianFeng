@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "日历和任务",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#d2def9",
+  "navigationBarBackgroundColor": "#d2def9",
+  "usingComponents": {
+    "calendar": "/components/calendar/calendar",
+    "treeitems": "/components/treeitems/treeitems"
+  }
+}
